@@ -6,7 +6,7 @@ const app = express();
 
 // config
 const publicDir = 'public';
-const port = giprocess.env.PORT || 5000
+const port = process.env.PORT || 5000
 
 
 // setting templating engine
@@ -25,7 +25,7 @@ app.listen(port, function(){
 
 /* add your domain extensions and the relevant mappings to view files + data */
 
-// index page 
+// index page
 app.get('/', function(req, res) {
     res.render('pages/index', {
     	title : "Home - Luminex",
@@ -33,7 +33,7 @@ app.get('/', function(req, res) {
     });
 });
 
-// about page 
+// about page
 app.get('/about', function(req, res) {
     res.render('pages/about', {
     	title : "About Us - Luminex",
@@ -72,5 +72,3 @@ app.get('/industries', function(req, res) {
     	css : "css/industries.css"
     });
 });
-
-
