@@ -1,0 +1,87 @@
+<!-- views/partials/header.ejs -->
+
+<style>
+#lang{
+  margin-top : -2px;  
+  padding: 2px;
+  float : right;
+  cursor: pointer;
+}
+.dropdown-content{
+  position : relative;
+  display : none;
+}
+
+.dropbtn{
+    margin-bottom : 30%;
+}
+
+#lang:hover .dropbtn{
+    padding-bottom: 30%;
+        border-bottom : 1px solid yellow;
+
+}
+
+#lang:hover .dropdown-content{
+  margin-top : 1%;  
+  display : block;
+}
+</style>
+
+<div class="container clearfix et_menu_container">
+    <div class="logo_container">
+        <span class="logo_helper"></span>
+        <a href="https://luminex.com/en/">
+            <img src="./images/tw-logo-white300.png" alt="Luminex" id="logo" data-height-percentage="60" />
+        </a>
+    </div>
+    <div id="et-top-navigation" data-height="66" data-fixed-height="50">
+        <nav id="top-menu-nav">
+            <ul id="top-menu" class="nav" >
+                <li id="home" class="menu-item menu-item-type-post_type menu-item-object-page homePage">
+                    <a href="/" style="color: #fcc012;">الصفحة الرئيسية</a>
+                </li>
+                <li id="servicesPage" class="menu-item menu-item-type-post_type menu-item-object-page servicesPage">
+                    <a href="/services">خدمات</a>
+                </li>
+                <li id="Industries" class="menu-item menu-item-type-post_type menu-item-object-page Industries">
+                    <a href="/industries">الصناعات</a>
+                </li>
+
+                <li id="About" class="menu-item menu-item-type-post_type menu-item-object-page About">
+                    <a href="/about">حول</a>
+                </li>
+
+                <li id="Contact Us" class="menu-item menu-item-type-post_type menu-item-object-page Contact Us">
+                    <a href="/contact">اتصل بنا</a>
+                </li>
+
+                <li id="lang" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
+                    <div class="dropbtn">
+                        <img src="images/arab.gif" width="30px" />
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="/en"><img src="images/us.png" width="30px" /></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="et_mobile_nav_menu">
+            <div class="mobile_nav closed">
+                <span class="select_page">Select Page</span>
+                <span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+            </div>
+        </div>
+    </div>
+    <!-- #et-top-navigation -->
+</div>
+<!-- .container -->
+<div class="et_search_outer">
+    <div class="container et_search_form_container">
+        <form role="search" method="get" class="et-search-form" action="https://luminex.com/en/">
+            <input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" /> </form>
+        <span class="et_close_search_field"></span>
+    </div>
+</div>

@@ -1,5 +1,33 @@
 <!-- views/partials/header.ejs -->
 
+<style>
+#lang{
+  margin-top : -2px;  
+  padding: 2px;
+  float : right;
+  cursor: pointer;
+}
+.dropdown-content{
+  position : relative;
+  display : none;
+}
+
+.dropbtn{
+    margin-bottom : 30%;
+}
+
+#lang:hover .dropbtn{
+    padding-bottom: 30%;
+        border-bottom : 1px solid yellow;
+
+}
+
+#lang:hover .dropdown-content{
+  margin-top : 1%;  
+  display : block;
+}
+</style>
+
 <div class="container clearfix et_menu_container">
     <div class="logo_container">
         <span class="logo_helper"></span>
@@ -11,21 +39,31 @@
         <nav id="top-menu-nav">
             <ul id="top-menu" class="nav">
                 <li id="home" class="menu-item menu-item-type-post_type menu-item-object-page homePage">
-                    <a href="/" style="color: #fcc012;">Home</a>
+                    <a href="/<%= language%>" style="color: #fcc012;">Home</a>
                 </li>
                 <li id="servicesPage" class="menu-item menu-item-type-post_type menu-item-object-page servicesPage">
-                    <a href="/services">Services</a>
+                    <a href="/<%= language%>/services">Services</a>
                 </li>
                 <li id="Industries" class="menu-item menu-item-type-post_type menu-item-object-page Industries">
-                    <a href="/industries">Industries</a>
+                    <a href="/<%= language%>/industries">Industries</a>
                 </li>
 
                 <li id="About" class="menu-item menu-item-type-post_type menu-item-object-page About">
-                    <a href="/about">About</a>
+                    <a href="/<%= language%>/about">About</a>
                 </li>
 
                 <li id="Contact Us" class="menu-item menu-item-type-post_type menu-item-object-page Contact Us">
-                    <a href="/contact">Contact Us</a>
+                    <a href="/<%= language%>/contact">Contact Us</a>
+                </li>
+
+               <li id="lang" class="menu-item menu-item-type-post_type menu-item-object-page dropdown">
+                    <div class="dropbtn">
+                        <img src="images/us.png" width="30px" />
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="/ar-sa"><img src="images/arab.gif" width="30px" /></a>
+                    </div>
                 </li>
             </ul>
         </nav>

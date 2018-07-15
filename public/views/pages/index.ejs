@@ -9,7 +9,11 @@
 	<div id="page-container">
 
 		<header id="main-header" data-height-onload="66">
-			<% include ../partials/header %>
+			<% if(language == "en") {%>
+				<% include ../partials/en/header %>
+			<% } else { %>
+				<% include ../partials/ar-sa/header %>
+			<% }%>
 		</header>
 		<!-- #main-header -->
 
@@ -30,12 +34,12 @@
 											<div class="et_pb_header_description" data-typing-speed=100 data-typing-delay=0 data-typing-backdelay=1500 data-typing-loop=true
 											 data-typing-cursor=false>
 
-												<span class="et_pb_fullwidth_header_subhead">Digital Innovation </span>
+												<% if(language == "en") {%>
+													<% include ../partials/en/index/title %>
+												<% } else { %>
+													<% include ../partials/ar-sa/index/title %>
+												<% }%>
 
-												<h1 class="et_pb_module_header fancyline-title"> Let's step into the future with swag
-													<br>
-<span class="dwd-typed" style="display:none;opacity:0;visibility:hidden;">ڈیجیٹل تبدیلی  | الذكاء الاصطناعي  |تطوير البرمجيات  |التسليم |برامج قابله للتحجيم |وسائل الاعلام الاجتماعية
-								</span>
 													<span class="dwd-typing"></span>
 													<span class="dwd-aftertext"></span>
 												</h1>
@@ -61,7 +65,13 @@
 
 										<div class="et_pb_text_inner">
 											<h1>
-												<span style="font-weight: 400;">You've got a vision. Let's bring it to Life</span>
+												<span style="font-weight: 400;">
+													<% if(language == "en") {%>
+														<% include ../partials/en/index/tagline %>
+													<% } else { %>
+														<% include ../partials/ar-sa/index/tagline %>
+													<% }%>
+												</span>
 											</h1>
 										</div>
 									</div>
@@ -79,21 +89,17 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/global-reach-icon-1.png">
-													<img src="./images/developing-programming-coding-technologies-website-design-grayed.png" alt="Global Reach Icon" class="et-waypoint et_pb_animation_top sp-no-webp"
+													<source srcset="/images/global-reach-icon-1.png">
+													<img src="/images/developing-programming-coding-technologies-website-design-grayed.png" alt="Global Reach Icon" class="et-waypoint et_pb_animation_top sp-no-webp"
 													 style="width:100%">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">
-													<p>Advanced Technology</p>
-												</h4>
-												<div class="et_pb_blurb_description">
-													<p>Profound transformation of business and organizational activities, processes, competencies and models to fully
-														leverage the changes and opportunities of a mix of digital technologies and their accelerating impact across
-														society
-													</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/index/card1 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/index/card1 %>
+												<% }%>
 											</div>
 										</div>
 									</div>
@@ -107,12 +113,11 @@
 												<img src="./images/smart-search-icon-1.png" alt="Smart Search Icon" class="et-waypoint et_pb_animation_top sp-no-webp et-animated">
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">
-													<p>Pareto Principle</p>
-												</h4>
-												<div class="et_pb_blurb_description">
-													<p>We love automation and automated processes. Following the Pareto principle: Get 80% done in 20% of the time</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/index/card2 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/index/card2 %>
+												<% }%>
 											</div>
 										</div>
 									</div>
@@ -131,12 +136,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">
-													<p>Quick Communication</p>
-												</h4>
-												<div class="et_pb_blurb_description">
-													<p>Contact us any time if you have questions or need a new impulse. we would love to have a chat</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/index/card3%>
+												<% } else { %>
+													<% include ../partials/ar-sa/index/card3 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
@@ -188,11 +192,11 @@
 														<div class="et_pb_slide_description">
 
 															<div class="et_pb_slide_content et-hide-mobile">
-																<h2 class="et_pb_slide_title">"Lumiex helped us building scalable and state of the art vehicle tracking solution"</h2>
-																<p>
-																	<strong>Nur Reberto</strong>
-																</p>
-																<p style="color: #99c3eb; font-size: 16px; margin-top: -20px; font-weight: 400;">Head of developement at Prontotech</p>
+																<% if(language == "en") {%>
+																	<% include ../partials/en/index/testimonial1%>
+																<% } else { %>
+																	<% include ../partials/ar-sa/index/testimonial1 %>
+																<% }%>
 															</div>
 
 														</div>
@@ -212,11 +216,11 @@
 														<div class="et_pb_slide_description">
 
 															<div class="et_pb_slide_content et-hide-mobile">
-																<h2 class="et_pb_slide_title">"Luminex will win you over through ease of operation and excellent results."</h2>
-																<p>
-																	<strong>Soujanya Medapati</strong>
-																</p>
-																<p style="color: #99c3eb; font-size: 16px; margin-top: -20px; font-weight: 400;">CEO, Glitter Events</p>
+																<% if(language == "en") {%>
+																	<% include ../partials/en/index/testimonial2 %>
+																<% } else { %>
+																	<% include ../partials/ar-sa/index/testimonial2 %>
+																<% }%>
 															</div>
 														</div>
 														<!-- .et_pb_slide_description -->
@@ -241,7 +245,7 @@
 						<!-- .et_pb_section -->
 
 						
-						<% include ../partials/info %>
+						<% include ../partials/en/info %>
 					</div>
 				</article>
 			</div>
@@ -249,7 +253,7 @@
 			<span class="et_pb_scroll_top et-pb-icon"></span>
 
 			<footer id="main-footer">
-				<% include ../partials/footer %>
+				<% include ../partials/en/footer %>
 			</footer>
 		</div>
 	</div>

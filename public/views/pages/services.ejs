@@ -11,7 +11,11 @@
 	<div id="page-container">
 
 		<header id="main-header" data-height-onload="66">
-			<% include ../partials/header %>
+			<% if(language == "en") {%>
+				<% include ../partials/en/header %>
+			<% } else { %>
+				<% include ../partials/ar-sa/header %>
+			<% }%>
 		</header>
 		<!-- #main-header -->
 
@@ -362,14 +366,22 @@
 						</div>
 						<!-- .et_pb_section -->
 
-						<% include ../partials/info %>
+						<% if(language == "en") {%>
+							<% include ../partials/en/info %>
+						<% } else { %>
+							<% include ../partials/ar-sa/info %>
+						<% }%>
 				</article>
 				</div>
 
 				<span class="et_pb_scroll_top et-pb-icon"></span>
 
 				<footer id="main-footer">
-					<% include ../partials/footer %>
+					<% if(language == "en") {%>
+						<% include ../partials/en/footer %>
+					<% } else { %>
+						<% include ../partials/ar-sa/footer %>
+					<% }%>
 				</footer>
 				<!-- #main-footer -->
 			</div>

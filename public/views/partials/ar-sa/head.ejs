@@ -27,9 +27,22 @@
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 
-<style type="text/css">
-	img.wp-smiley,
-	img.emoji {
+<link rel='stylesheet' id='customeFullWidthHeader-css' href='css/customeFullWidthHeader/dwd-fullwidth-header.css' type='text/css' media='all' />
+<link rel='stylesheet' id='dwd-animate-css' href='css/customeFullWidthHeader/animate.css' type='text/css' media='all' />
+
+<link rel='stylesheet' id='custom-article-cards-css' href='css/articleCard/style.css' type='text/css' media='all' />
+
+<style type='text/css'>
+	.divi-100-article-card .et_pb_blog_grid .article-card__category,
+	.divi-100-article-card .et_pb_blog_grid .article-card__date {
+		background-color: #2b91dc;
+	}
+
+	.divi-100-article-card .et_pb_blog_grid .article-card__sub-title {
+		color: #2b91dc;
+	}
+
+	img.wp-smiley, img.emoji {
 		display: inline !important;
 		border: none !important;
 		box-shadow: none !important;
@@ -39,22 +52,6 @@
 		vertical-align: -0.1em !important;
 		background: none !important;
 		padding: 0 !important;
-	}
-</style>
-
-<link rel='stylesheet' id='customeFullWidthHeader-css' href='css/customeFullWidthHeader/dwd-fullwidth-header.css' type='text/css' media='all' />
-<link rel='stylesheet' id='dwd-animate-css' href='css/customeFullWidthHeader/animate.css' type='text/css' media='all' />
-
-<link rel='stylesheet' id='custom-article-cards-css' href='css/articleCard/style.css' type='text/css' media='all' />
-
-<style id='custom-article-cards-inline-css' type='text/css'>
-	.divi-100-article-card .et_pb_blog_grid .article-card__category,
-	.divi-100-article-card .et_pb_blog_grid .article-card__date {
-		background-color: #2b91dc;
-	}
-
-	.divi-100-article-card .et_pb_blog_grid .article-card__sub-title {
-		color: #2b91dc;
 	}
 </style>
 
@@ -136,5 +133,4 @@ if (!window.HTMLPictureElement && document.addEventListener) {
 	}
 </style>
 
-<link rel="stylesheet" href="css/et-core-unified-cached-inline-styles-index.css" />
-<link rel="stylesheet" href="css/et-core-unified-cached-inline-styles-2.css" />
+<link rel="stylesheet" href=<%= css %> />
