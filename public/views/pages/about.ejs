@@ -37,7 +37,7 @@
 
 
 								<picture>
-									<img src="./images/brainstorming_gray_blured.png" class="sp-no-webp" style="width:100%;height:40%">
+									<img src="../images/brainstorming_gray_blured.png" class="sp-no-webp" style="width:100%;height:40%">
 								</picture>
 							</section>
 
@@ -90,12 +90,11 @@
 
 
 									<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_center et_animated et_pb_text_1">
-
-
-										<div class="et_pb_text_inner">
-											<h2>Ready to get started?</h2>
-											<a href="./contact" class="et_pb_more_button et_pb_button et_pb_button_one et_pb_custom_button_icon" data-icon="&#x24;">Let's Talk</a>
-										</div>
+										<% if(language == "en") {%>
+											<% include ../partials/en/talk %>
+										<% } else { %>
+											<% include ../partials/ar-sa/talk %>
+										<% }%>
 									</div>
 									<!-- .et_pb_text -->
 									<div class="et_pb_module et_pb_space et_pb_divider et_animated et_pb_divider_1 et_pb_divider_position_">
@@ -145,7 +144,7 @@
 			var et_animation_data = [{ "class": "et_pb_fullwidth_header_0", "style": "fade", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_text_0", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "20%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_divider_0", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_0", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "30%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_1", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "30%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_2", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "30%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_3", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "30%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_4", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "30%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_5", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "30%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_6", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "30%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_7", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "30%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_8", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "30%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_text_1", "style": "foldBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "20%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_divider_1", "style": "slideBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_9", "style": "fade", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_10", "style": "fade", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }, { "class": "et_pb_blurb_11", "style": "fade", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "50%", "starting_opacity": "0%", "speed_curve": "ease-in-out" }];
 		</script>
 
-		<script type='text/javascript' src='./js/customeFullWidthHeader/dwd-fhe-custom.js'></script>
+		<script type='text/javascript' src='../js/customeFullWidthHeader/dwd-fhe-custom.js'></script>
 
 
 		<script type='text/javascript'>
@@ -155,12 +154,12 @@
 			var et_pb_box_shadow_elements = [];
 /* ]]> */
 		</script>
-		<script type='text/javascript' src='./js/custom.min.js'></script>
-		<script type='text/javascript' src='./js/articleCard/scripts.js'></script>
-		<script type='text/javascript' src='./js/monarch/idle-timer.min.js'></script>
+		<script type='text/javascript' src='../js/custom.min.js'></script>
+		<script type='text/javascript' src='../js/articleCard/scripts.js'></script>
+		<script type='text/javascript' src='../js/monarch/idle-timer.min.js'></script>
 
-		<script type='text/javascript' src='./js/monarch/custom.js'></script>
-		<script type='text/javascript' src='./js/monarch/common.js'></script>
+		<script type='text/javascript' src='../js/monarch/custom.js'></script>
+		<script type='text/javascript' src='../js/monarch/common.js'></script>
 </body>
 
 </html>

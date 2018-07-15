@@ -14,7 +14,11 @@
 
 
 		<header id="main-header" data-height-onload="66">
-			<% include ../partials/header %>
+			<% if(language == "en") {%>
+				<% include ../partials/en/header %>
+			<% } else { %>
+				<% include ../partials/ar-sa/header %>
+			<% }%>
 		</header>
 
 		<!-- #main-header -->
@@ -38,7 +42,7 @@
 
 								<picture>
 <!-- 												
- -->												<img src="./images/young-business-person_grayed_blured.png" class="sp-no-webp" style="width:100%;heigth:30%">
+ -->												<img src="../images/young-business-person_grayed_blured.png" class="sp-no-webp" style="width:100%;heigth:30%">
 											</picture>
 							</section>
 
@@ -78,8 +82,8 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/feature-01.png">
-													<img src="./images/feature-01.png" alt="Multichannel Sourcing Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
+													<source srcset="../images/feature-01.png">
+													<img src="../images/feature-01.png" alt="Multichannel Sourcing Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
@@ -104,8 +108,8 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/feature-02.png">
-													<img src="./images/feature-02.png" alt="Power Search Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
+													<source srcset="../images/feature-02.png">
+													<img src="../images/feature-02.png" alt="Power Search Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
@@ -130,8 +134,8 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/feature-03.png">
-													<img src="./images/feature-03.png" alt="Talent Pipeline Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
+													<source srcset="../images/feature-03.png">
+													<img src="../images/feature-03.png" alt="Talent Pipeline Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
@@ -161,8 +165,8 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/feature-04.png">
-													<img src="./images/feature-04.png" alt="Intelligent Filters Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
+													<source srcset="../images/feature-04.png">
+													<img src="../images/feature-04.png" alt="Intelligent Filters Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
@@ -187,8 +191,8 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/feature-05.png">
-													<img src="./images/feature-05.png" alt="Change Forecast Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
+													<source srcset="../images/feature-05.png">
+													<img src="../images/feature-05.png" alt="Change Forecast Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
@@ -213,8 +217,8 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/feature-06.png">
-													<img src="./images/feature-06.png" alt="Mobility Analysis Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
+													<source srcset="../images/feature-06.png">
+													<img src="../images/feature-06.png" alt="Mobility Analysis Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
@@ -244,8 +248,8 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/feature-07.png">
-													<img src="./images/feature-07.png" alt="Active Talent Pools Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
+													<source srcset="../images/feature-07.png">
+													<img src="../images/feature-07.png" alt="Active Talent Pools Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
@@ -270,8 +274,8 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/feature-08.png">
-													<img src="./images/feature-08.png" alt="Workflow Management Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
+													<source srcset="../images/feature-08.png">
+													<img src="../images/feature-08.png" alt="Workflow Management Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
@@ -296,8 +300,8 @@
 										<div class="et_pb_blurb_content">
 											<div class="et_pb_main_blurb_image">
 												<picture>
-													<source srcset="./images/feature-09.png">
-													<img src="./images/feature-09.png" alt="Team Collaboration Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
+													<source srcset="../images/feature-09.png">
+													<img src="../images/feature-09.png" alt="Team Collaboration Icon" class="et-waypoint et_pb_animation_top sp-no-webp">
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
@@ -329,12 +333,11 @@
 
 
 									<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_center et_animated et_pb_text_1">
-
-
-										<div class="et_pb_text_inner">
-											<h2>Ready to get started?</h2>
-											<a href="/contact" class="et_pb_more_button et_pb_button et_pb_button_one et_pb_custom_button_icon" data-icon="&#x24;">Let's Talk</a>
-										</div>
+										<% if(language == "en") {%>
+											<% include ../partials/en/talk %>
+										<% } else { %>
+											<% include ../partials/ar-sa/talk %>
+										<% }%>
 									</div>
 									<!-- .et_pb_text -->
 									<div class="et_pb_module et_pb_space et_pb_divider et_animated et_pb_divider_1 et_pb_divider_position_">
@@ -356,7 +359,11 @@
 						</div>
 						<!-- .et_pb_section -->
 
-						<% include ../partials/info %>
+						<% if(language == "en") {%>
+							<% include ../partials/en/info %>
+						<% } else { %>
+							<% include ../partials/ar-sa/info %>
+						<% }%>
 
 				</article>
 				<!-- .et_pb_post -->
@@ -371,7 +378,11 @@
 
 
 				<footer id="main-footer">
-					<% include ../partials/footer %>
+					<% if(language == "en") {%>
+						<% include ../partials/en/footer %>
+					<% } else { %>
+						<% include ../partials/ar-sa/footer %>
+					<% }%>
 				</footer>
 				<!-- #main-footer -->
 			</div>
@@ -386,7 +397,7 @@
 		</script>
 		<link rel='stylesheet' id='et-builder-googlefonts-css' href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,700|PT+Sans:regular,italic,700,700italic|Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&#038;subset=latin,latin-ext'
 		 type='text/css' media='all' />
-		<script type='text/javascript' src='./js/customeFullWidthHeader/dwd-fhe-custom.js'></script>
+		<script type='text/javascript' src='../js/customeFullWidthHeader/dwd-fhe-custom.js'></script>
 
 
 		<script type='text/javascript'>
@@ -396,12 +407,12 @@
 			var et_pb_box_shadow_elements = [];
 /* ]]> */
 		</script>
-		<script type='text/javascript' src='./js/custom.min.js'></script>
-		<script type='text/javascript' src='./js/articleCard/scripts.js'></script>
-		<script type='text/javascript' src='./js/monarch/idle-timer.min.js'></script>
+		<script type='text/javascript' src='../js/custom.min.js'></script>
+		<script type='text/javascript' src='../js/articleCard/scripts.js'></script>
+		<script type='text/javascript' src='../js/monarch/idle-timer.min.js'></script>
 
-		<script type='text/javascript' src='./js/monarch/custom.js'></script>
-		<script type='text/javascript' src='./js/monarch/common.js'></script>
+		<script type='text/javascript' src='../js/monarch/custom.js'></script>
+		<script type='text/javascript' src='../js/monarch/common.js'></script>
 </body>
 
 </html>
