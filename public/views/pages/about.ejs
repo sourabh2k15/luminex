@@ -11,7 +11,11 @@
 	<div id="page-container">
 
 		<header id="main-header" data-height-onload="66">
-			<% include ../partials/header %>
+			<% if(language == "en") {%>
+				<% include ../partials/en/header %>
+			<% } else { %>
+				<% include ../partials/ar-sa/header %>
+			<% }%>
 		</header>
 		<!-- #main-header -->
 
@@ -49,7 +53,11 @@
 
 
 										<div class="et_pb_header_content_wrapper">
-											<h2>We’re a purpose-driven consulting firm that helps companies solve business problems and build for the future</h2>
+											<% if(language == "en") {%>
+												<% include ../partials/en/about/mission%>
+											<% } else { %>
+												<% include ../partials/ar-sa/about/mission %>
+											<% }%>
 										</div>
 									</div>
 									<!-- .et_pb_text -->
@@ -64,46 +72,11 @@
 
 							<div class=" et_pb_row et_pb_row_0">
 
-								<div class="et_pb_text_inner">
-
-									<p>The world is changing—fast. To keep pace, companies need to find new ways to disrupt the status quo, get to market
-										faster, create experiences their customers love, and build operational muscle for sustainable results.</p>
-									<p>
-										Rising to those challenges demands a fresh approach to problem solving. That’s where Slalom comes in. We’re a purpose-driven
-										consulting firm that helps companies solve business problems and build for the future, with advisory, customer
-										exprience, technology, and analytics.</p>
-									<p>We’re a team of thinkers, makers, and doers that came from enterprises, consultancies, agencies, and startups—all
-										attracted by the promise of loving work and life. Our teams are deeply connected and bring their shared experiences
-										and insights across industries, disciplines, and markets to each and every engagement.</p>
-									<br>
-									<h2>Here’s our promise:</h2>
-									<p>
-										<h3>We’ll help you find your why.</h3>
-										Purpose is the heartbeat of your business. We’ll challenge you to clarify your unique values, beliefs, and the impact you
-										seek to make and use that to guide our work together.</p>
-
-
-									<p>
-										<h3>We’ll help you embrace change</h3>
-										Meaningful change is realized with a connected team that’s aligned around a shared vision and relentless in its pursuit.
-										We’ll help you start learning by doing, and build the confidence and discipline to gain momentum and keep moving
-										forward, one step at a time.
-									</p>
-									<p>
-										<h3>We’re in this together.</h3>
-										Partner is a verb we live every day. We’re passionate about your success and dedicated to making your business better and
-										stronger than it is today. Our style is collaborative, agile, and flexible to meet the needs of your people, processes,
-										and technologies.
-									</p>
-									<p>
-										<h3>We’ll design and build the solution that’s right for you.</h3>
-										One size doesn’t fit all. We’ll work with your teams to build sustainable solutions, purpose-built for you. We’re agile natives
-										with a fast and flexible approach that translates to quicker outcomes and faster time-to-market.
-									</p>
-
-
-
-								</div>
+								<% if(language == "en") {%>
+									<% include ../partials/en/about/body%>
+								<% } else { %>
+									<% include ../partials/ar-sa/about/body %>
+								<% }%>
 
 							</div>
 							<!-- .et_pb_row -->
@@ -143,14 +116,22 @@
 
 						</div>
 
-						<% include ../partials/info %>
+						<% if(language == "en") {%>
+							<% include ../partials/en/info %>
+						<% } else { %>
+							<% include ../partials/ar-sa/info %>
+						<% }%>
 				</article>
 				</div>
 
 				<span class="et_pb_scroll_top et-pb-icon"></span>
 				
 				<footer id="main-footer">
-					<% include ../partials/footer %>
+					<% if(language == "en") {%>
+						<% include ../partials/en/footer %>
+					<% } else { %>
+						<% include ../partials/ar-sa/footer %>
+					<% }%>
 				</footer>
 				<!-- #main-footer -->
 			</div>
