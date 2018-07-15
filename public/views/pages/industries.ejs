@@ -60,7 +60,13 @@
 
 
 										<div class="et_pb_header_content_wrapper">
-											<h2>We drive innovation to improve the way the world works and lives. With expertise across several industries and all business functions, we deliver transformational outcomes for a demanding new digital world</h2>
+											<h2>
+												<% if(language == "en") {%>
+													<% include ../partials/en/industries/mission %>
+												<% } else { %>
+													<% include ../partials/ar-sa/industries/mission %>
+												<% }%>
+											</h2>
 										</div>
 									</div>
 									<!-- .et_pb_text -->

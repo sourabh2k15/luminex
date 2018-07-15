@@ -55,8 +55,13 @@
 
 
 										<div class="et_pb_text_inner">
-											<h2>We are living in truly exciting times where digital technologies are disrupting every single industry. This means
-												lots of opportunities, but also lots of challenges for old business models</h2>
+											<h2>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/mission %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/mission %>
+												<% }%>
+											</h2>
 										</div>
 									</div>
 									<!-- .et_pb_text -->
@@ -83,13 +88,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">Digital Transformation</h4>
-												<div class="et_pb_blurb_description">
-													<p>Profound transformation of business and organizational activities, processes, competencies and models to fully
-														leverage the changes and opportunities of a mix of digital technologies and their accelerating impact across
-														society
-													</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/feature1 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/feature1 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
@@ -112,12 +115,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">Scalable Technology</h4>
-												<div class="et_pb_blurb_description">
-													<p>Small businesses have the greatest need for scalable solutions because they have the biggest potential for growth.
-														Having the right tools in place that are flexible enough to adapt with you can ensure maximum fitness of the
-														business and enable leadership to focus on the work.</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/feature2 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/feature2 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
@@ -140,13 +142,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">Artificial Intelligence</h4>
-												<div class="et_pb_blurb_description">
-													<p>AI will transform the relationship between people and technology, charging our creativity and skills.It promises
-														a new era of disruption and productivity, where human ingenuity is enhanced by speed and precision.
-
-													</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/feature3 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/feature3 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
@@ -174,12 +174,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">Internet of things</h4>
-												<div class="et_pb_blurb_description">
-													<p>IoT offers us opportunity to be more efficient in how we do things, saving us time, money and often emissions
-														in the process. From hairbrushes to scales, consumer and industrial devices are having chips inserted into
-														them to collect and communicate data</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/feature4 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/feature4 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
@@ -202,11 +201,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">Automation</h4>
-												<div class="et_pb_blurb_description">
-													<p>Why spend time and effort doing the same repeated manual work every single time? We love automating every thing
-														so you can invest your precious time in growing your business or just relaxing</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/feature5 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/feature5 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
@@ -229,11 +228,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">Security</h4>
-												<div class="et_pb_blurb_description">
-													<p>When technolgy comes in to picture so comes security. New pathways open up on how a business can be compromised.
-														We provide security solutions and training for companies to follow and adhere to avoid any digital mishaps</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/feature6 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/feature6 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
@@ -261,11 +260,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">Social Media</h4>
-												<div class="et_pb_blurb_description">
-													<p>You have an awesome product that sells like hotcakes among localites. Let us help you spread the word not just
-														in your city or country but though out the world and help you gain popularity and grow your business</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/feature7 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/feature7 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
@@ -286,11 +285,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header">Innovation</h4>
-												<div class="et_pb_blurb_description">
-													<p>We live and breathe innovation. At our research labs we constantly try to come up with new ideas and solutions.
-														If you have an idea you would like to implement, we are all ears, we would love to bring your idea to life</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/feature8 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/feature8 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
@@ -313,11 +312,11 @@
 												</picture>
 											</div>
 											<div class="et_pb_blurb_container">
-												<h4 class="et_pb_module_header"> Business Acceleration</h4>
-												<div class="et_pb_blurb_description">
-													<p>We provide mentorship and support to developing businesses, developing companies, investors and others to help
-														them become stable, self-sufficient businesses</p>
-												</div>
+												<% if(language == "en") {%>
+													<% include ../partials/en/services/feature8 %>
+												<% } else { %>
+													<% include ../partials/ar-sa/services/feature8 %>
+												<% }%>
 												<!-- .et_pb_blurb_description -->
 											</div>
 										</div>
