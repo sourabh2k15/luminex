@@ -26,6 +26,9 @@ app.listen(port, function(){
 
 /* add your domain extensions and the relevant mappings to view files + data */
 
+app.get("/". function(res, req){
+    res.redirect("/en");
+})
 // english
 
 // index page
